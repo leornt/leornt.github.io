@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --black: #21222c;
+    --blackSecondary: #414558;
+    --blackTernary: #a7abbe;
+    --grey: #414558;
+    --greySecondary: #626784;
+    --greyTernary: #b6b9c9;
+    --white: #f8f8f2;
+    --whiteSecondary: #fff;
+    --cyan: #80ffea;
+    --cyanSecondary: #ccfff6;
+    --green: #8aff80;
+    --greenSecondary: #d0ffcc;
+    --orange: #ffca80;
+    --orangeSecondary: #ffeacc;
+    --pink: #ff80bf;
+    --pinkSecondary: #ffcce6;
+    --purple: #9580ff;
+    --purpleSecondary: #d4ccff;
+    --red: #ff9580;
+    --redSecondary: #ffd4cc;
+    --yellow: #ffff80;
+    --yellowSecondary: #ffc;
+    --disabled: #6c7393;
+    --gradientDegree: 135deg;
+    --purple-cyan: linear-gradient(var(--gradientDegree),var(--purple) 0%,var(--cyan) 100%);
+    --yellow-pink: linear-gradient(var(--gradientDegree),var(--yellow) 0%,var(--pink) 100%);
+    --cyan-green: linear-gradient(var(--gradientDegree),var(--cyan) 0%,var(--green) 100%);
+    --pink-purple: linear-gradient(var(--gradientDegree),var(--pink) 0%,var(--purple) 100%)
+}
+
+body {
+    background-color: var(--black);
+}
+
+h1 {
+    color: var(--purple);
+}
