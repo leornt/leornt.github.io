@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html {
+        font-family: "Bree Serif", serif;
+    }
+}
+
 :root {
     --black: #21222c;
     --blackSecondary: #414558;
@@ -39,4 +45,14 @@ body {
 
 h1 {
     color: var(--purple);
+}
+h2 {
+    color: var(--purpleSecondary);
+}
+
+.header-photo {
+    border-radius: 16px;
+    height: 36vh;
+    overflow: hidden;
+    width: 30vh;
 }
