@@ -140,3 +140,108 @@ p {
 .icon {
     color: var(--cyan);
 }
+
+/* Timeline Container */
+.timeline {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Card container */
+.timeline .step {
+    position: relative;
+}
+
+/* setting padding based on even or odd */
+.timeline .step:nth-child(odd) {
+    padding: 30px 0 30px 30px;
+}
+.timeline .step:nth-child(even) {
+    padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.timeline .step::before {
+    border: solid var(--purple);
+    content: "";
+    position: absolute;
+    width: 50%;
+}
+
+/* Setting the border of top, bottom, left */
+.timeline .step:nth-child(odd)::before {
+    border-radius: 50px 0 0 50px;
+    border-width: 5px 0 5px 5px;
+    bottom: -5px;
+    left: 0px;
+    top: -5px;
+}
+
+/* Setting the border of top, bottom, right */
+.timeline .step:nth-child(even)::before {
+    border-radius: 0 50px 50px 0;
+    border-width: 5px 5px 5px 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+}
+
+/* Removing the border if it is the first step */
+.timeline .step:first-child::before {
+    border-top-left-radius: 0;
+    border-top: 0;
+}
+
+/* Removing the border if it is the last step  and it's odd */
+.timeline .step:last-child:nth-child(odd)::before {
+    border-bottom-left-radius: 0;
+    border-bottom: 0;
+}
+
+/* Removing the border if it is the last step  and it's even */
+.timeline .step:last-child:nth-child(even)::before {
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+}
+
+/* Information about the timeline */
+.timeline .info {
+    background: linear-gradient(145deg, #1e1f28, #23242f);
+    border-radius: 10px;
+    box-shadow:  8px 8px 16px #0d0e12,
+                -8px -8px 16px #353646;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Title of the step */
+.timeline .title {
+    color: var(--green);
+    position: relative;
+}
+
+/* Timeline dot  */
+.timeline .title::before {
+    background: white;
+    border-radius: 999px;
+    border: 3px solid var(--purple);
+    content: "";
+    height: 15px;
+    position: absolute;
+    width: 15px;
+}
+
+/* text right if the step is even  */
+.timeline .step:nth-child(even) > .info > .title {
+    text-align: right;
+}
+
+/* setting dot to the left if the step is odd */
+.timeline .step:nth-child(odd) > .info > .title::before {
+    left: -45px;
+}
+
+/* setting dot to the right if the step is odd */
+.timeline .step:nth-child(even) > .info > .title::before {
+    right: -45px;
+}
