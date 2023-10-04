@@ -1,28 +1,208 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./output.css" rel="stylesheet">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="flex p-16 items-center" style="height: 90vh;">
-            <div class="w-full">
-                <div class="flex flex-col float-left">
-                    <h1 class="text-6xl font-bold float-left">Leonardo</br>Renaut</h1>
-                    <h2 class="text-xl font-bold float-left">Flutter Developer</h2>
-                </div>
-                <div class="header-photo float-right ring-2 ring-[var(--cyan)] ring-offset-4 ring-offset-[var(--black)]">
-                    <img src="./profile.jpg" alt="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div style="height: 100vh;">
+        <div class="header-bg"></div>
+        <div class="absolute top-0 w-full">
+            <div class="flex p-16 items-center" style="height: 90vh;">
+                <div class="w-full">
+                    <div class="flex flex-col float-left">
+                        <h1 class="text-6xl font-bold float-left">Leonardo</br>Renaut</h1>
+                        <h2 class="text-xl font-bold float-left">Flutter Developer</h2>
+                    </div>
+                    <div
+                        class="header-photo float-right ring-2 ring-[var(--cyan)] ring-offset-4 ring-offset-[var(--black)]">
+                        <img src="./img/profile.jpg" alt="">
+                    </div>
                 </div>
             </div>
+            <div class="flex-col text-center self-center items-center justify-center content-center">
+                <span class="icon material-icons" style="font-size: 32px;">keyboard_double_arrow_up</span>
+                <h2>Ver mais</h2>
+            </div>
         </div>
-        <div class="">
+    </div>
+    <div class="card m-16">
+        <h3 class="text-2xl">About Me</h3>
+        <hr>
+        <p>
+            Engenheiro de Software, apaixonado por tecnologia
+        </p>
+    </div>
+    <div style="height: 64px"></div>
+    <h3 class="text-4xl text-center">Portfolio</h3>
+    <div class="grid grid-cols-3 m-16 gap-8">
+        <a href="https://play.google.com/store/apps/details?id=br.coop.castrolanda.portal">
+            <div class="card">
+                <img src="./img/agil.webp" alt="">
+                <hr>
+                <h3>Ágil Castrolanda</h3>
+                <hr>
+                <p>
+                    Conjunto de módulos para auxiliar o cooperado em suas operações diárias
+                </p>
+                <hr>
+                <a href="https://www.castrolanda.coop.br/inovacao-castrolanda-e-finalista-do-premio-somoscoop-2022/">
+                    Prêmio SomosCoop 2022
+                </a>
+            </div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=br.coop.castrolanda.servicos">
+            <div class="card">
+                <img src="./img/services.webp" alt="">
+                <hr>
+                <h3>Serviços Castrolanda</h3>
+                <hr>
+                <p>
+                    O App Serviços Castrolanda é destinado a Colaboradores e Prestadores de Serviços previamente
+                    cadastrados, responsáveis pelo gestão de serviços de forma rápida e objetiva
+                </p>
+            </div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=br.com.websix.consaude">
+            <div class="card">
+                <img src="./img/consaude.webp" alt="">
+                <hr>
+                <h3>Consaúde</h3>
+                <hr>
+                <p>
+                    O aplicativo Consaúde é integrado total ao site institucional e possibilidade de operação offline,
+                    traz a nossa tradição empresarial com acesso rápidos as redes credenciadas de atendimento e aos
+                    nossos serviços, programas e especialidades.
+                </p>
+            </div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=br.com.viasoft.reagapp">
+            <div class="card">
+                <img src="./img/agrotitan.webp" alt="">
+                <hr>
+                <h3>Agrotitan</h3>
+                <hr>
+                <p>
+                    O aplicativo Reag App veio para agilizar a emissão de receituários Agronômicos para os técnicos e
+                    engenheiros agrícolas que estão em campo
+                </p>
+            </div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=br.com.websix.gmais">
+            <div class="card">
+                <img src="./img/gmais.webp" alt="">
+                <hr>
+                <h3>G+</h3>
+                <hr>
+                <p>
+                    G+ são iniciativas GMAD para apoiar ainda mais sua marcenaria. A maquininha é uma delas. Uma opção
+                    prática e competitiva de parcelamento a seu cliente e o recebimento do seu serviço à vista
+                </p>
+            </div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=br.com.websix.ibvarejo">
+            <div class="card">
+                <img src="./img/ibvarejo.webp" alt="">
+                <hr>
+                <h3>IB Varejo</h3>
+                <hr>
+                <p>
+                    Cursos online com certificado para impulsionar sua carreira profissional. Otimize seu tempo e
+                    aprenda sem sair de casa acesse nossos cursos online para varejo
+                </p>
+            </div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=br.com.websix.unimedpg">
+            <div class="card">
+                <img src="./img/movimentes.webp" alt="">
+                <hr>
+                <h3>MovimentesPG</h3>
+                <hr>
+                <p>
+                    É uma plataforma de geração e análise de ideias, onde seu foco é promover e fortalecer a inovação
+                    para os próprios colaboradores
+                </p>
+                <hr>
+                <a
+                    href="https://www.unimed.coop.br/site/web/pontagrossa/-/unimed-ponta-grossa-%C3%A9-eleita-empresa-inspiradora-em-pr%C3%AAmio-de-inova%C3%A7%C3%A3o?redirect=%2Fsite%2Fweb%2Fpontagrossa%2Fnoticias">
+                    Prêmio Empresa Inovadora
+                </a>
+            </div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=br.com.websix.amoritmo">
+            <div class="card">
+                <img src="./img/amoritmo.webp" alt="">
+                <hr>
+                <h3>Amoritmo</h3>
+                <hr>
+                <p>
+                    A revolução nos APP's de relacionamentos. Interação entre Usuários com percentual de compatibilidade
+                    calculado
+                </p>
+            </div>
+        </a>
+        <div class="card">
+            <img src="./img/topgun.jpg" alt="">
+            <hr>
+            <h3>TopGun</h3>
+            <hr>
+            <p>
+                App de treinamentos internos e gameficação da DAF Caminhões
+            </p>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=br.com.websix.unimedlondrina">
+            <div class="card">
+                <img src="./img/pi.webp" alt="">
+                <hr>
+                <h3>Programa de Inovação Unimed</h3>
+                <hr>
+                <p>
+                    Uma plataforma de geração e análise de ideias, onde seu foco é promover e fortalecer a inovação
+                    para os próprios colaboradores
+                </p>
+            </div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=br.com.websix.campoaberto">
+            <div class="card">
+                <img src="./img/campoaberto.webp" alt="">
+                <hr>
+                <h3>Campo Aberto FM</h3>
+                <hr>
+                <p>
+                    Rádio, informações de contato e acesso às páginas da rádio
+                </p>
+            </div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=br.com.websix.indicacoes">
+            <div class="card">
+                <img src="./img/indiqueme.webp" alt="">
+                <hr>
+                <h3>Indique Me</h3>
+                <hr>
+                <p>
+                    App de indicações de produtos e vendas
+                </p>
+            </div>
+        </a>
+        <div class="card">
+            <img src="./img/gtop.png" alt="">
+            <hr>
+            <h3>GTOP Catálogos</h3>
+            <hr>
+            <p>
+                Aplicativo desenvolvido para projeto universitário para venda de produtos por catálogos porta a porta.
+            </p>
+        </div>
+    </div>
+</body>
 
-        </div>
-    </body>
 </html>

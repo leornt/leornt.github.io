@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    html {
-        font-family: "Bree Serif", serif;
-    }
-}
-
 :root {
     --black: #21222c;
     --blackSecondary: #414558;
@@ -43,11 +37,96 @@ body {
     background-color: var(--black);
 }
 
+.card a {
+    background: 
+        linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    border-radius: 0.6em;
+    border: 2px solid var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    color: var(--green);
+    font-family: inherit;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    line-height: 1.4em;
+    overflow: hidden;
+    padding: 0.7em 2.7em;
+    position: relative;
+    transition: all 0.3s;
+    width: 100px;
+}
+
+.card a:hover {
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+    color: var(--green);
+}
+
+.card a:before {
+    background: 
+        linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+    content: "";
+    height: 100%;
+    left: -4em;
+    position: absolute;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    width: 4em;
+}
+
+.card a:hover:before {
+    transform: translateX(20em);
+}
+
 h1 {
     color: var(--purple);
 }
 h2 {
     color: var(--purpleSecondary);
+}
+h3 {
+    color: var(--green);
+}
+hr {
+    border-top: transparent;
+    height: 16px;
+}
+p {
+    color: var(--white);
+}
+
+.card {
+    border-radius: 32px;
+    background: linear-gradient(145deg, #1e1f28, #23242f);
+    box-shadow:  16px 16px 32px #0d0e12,
+                -16px -16px 32px #353646;
+    padding: 32px;
+}
+
+.card h3{
+    text-align: center;
+}
+.card p {
+    text-align: justify;
+}
+
+.card img {
+    border-radius: 8px;
+    display: block;
+    height: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.header-bg {
+    height: 100vh;
+    background: 
+        linear-gradient(135deg, var(--purple) 25%, transparent 25%) -40px 0/ 80px 80px, 
+        linear-gradient(225deg, var(--cyan) 25%, transparent 25%) -40px 0/ 80px 80px, 
+        linear-gradient(315deg, var(--purple) 25%, transparent 25%) 0px 0/ 80px 80px, 
+        linear-gradient(45deg, var(--cyan) 25%, var(--black) 25%) 0px 0/ 80px 80px;
+
+    opacity: .05;
 }
 
 .header-photo {
@@ -55,4 +134,8 @@ h2 {
     height: 36vh;
     overflow: hidden;
     width: 30vh;
+}
+
+.icon {
+    color: var(--cyan);
 }
