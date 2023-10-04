@@ -99,11 +99,11 @@ p {
 }
 
 .card {
-    border-radius: 32px;
     background: linear-gradient(145deg, #1e1f28, #23242f);
     box-shadow:  16px 16px 32px #0d0e12,
                 -16px -16px 32px #353646;
-    padding: 32px;
+
+    @apply h-full p-8 rounded-[32px]
 }
 
 .card h3{
