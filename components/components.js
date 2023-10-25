@@ -1,3 +1,9 @@
+window.customElements.define('c-contact', class extends HTMLElement {
+    constructor() {super();}
+    async connectedCallback() {
+        this.innerHTML = await (await fetch('/components/contact.html')).text();
+    }
+});
 window.customElements.define('c-header', class extends HTMLElement {
     constructor() {super();}
     async connectedCallback() {
