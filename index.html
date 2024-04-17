@@ -29,7 +29,8 @@
     <script type="module" src="./components/components.js"></script>
 
     <script>
-        function redirectToURL(url) {
+        function redirectToURL(event, url) {
+            event.preventDefault();
             window.open(url, '_blank');
         }
     </script>
