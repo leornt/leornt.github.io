@@ -18,7 +18,7 @@
     <meta name="msapplication-config" content="/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <link href="./output.css" rel="stylesheet">
+    <link href="/output.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,11 +26,22 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <script type="module" src="./components/components.js"></script>
+    <script type="module" src="/components/components.js"></script>
+
+    <script>
+        function redirectToURL(event, url) {
+            event.preventDefault();
+            window.open(url, '_blank');
+        }
+    </script>
 </head>
 
 <body>
-    <h1>Página em Construção</h1>
+    <c-header></c-header>
+    <c-contact></c-contact>
+    <c-portfolio></c-portfolio>
+    <c-timeline></c-timeline>
+    <c-skill></c-skill>
     </div>
 </body>
 
